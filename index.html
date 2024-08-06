@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Application Survey</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+        <header class="header">
+           <h1 id="title" class="text-center">MarieAlex Project Development Form</h1>
+           <p class="description text-center" id="description">We are looking for talents like you. Apply!</p>
+        </header>
+    
+        <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+           <fieldset class="personal-information">
+               <legend>Personal Information</legend>
+          <div class="form-group">
+           <label for="name" id="name-label">Name: 
+            <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name" required />
+           </label>
+          </div>
+          <div class="form-group">
+           <label for="last-name">Last Name: 
+            <input class="form-control" id="last-name" name="last-name" type="text" required />
+           </label>
+           </div>
+           <div class="form-group">
+             <label for="career">Career: 
+            <input class="form-control" id="career" name="career" type="text" required />
+             </label>
+           </div>
+           <div class="form-group">
+             <label for="degree">Degree: 
+            <input class="form-control" id="degree" name="degree" type="text" required />
+             </label>
+           </div>
+        <div class="form-group">
+           <label for="email" id="email-label">Email: 
+            <input class="form-control" id="email" name="email" type="email" placeholder="Enter your email" required />
+        </label>
+        </div>
+        <div class="form-group">
+        <label for="number" id="number-label">Contact number: 
+            <input class="form-control" id="number" name="number" type="text" pattern="\d{10}" maxlength="10" placeholder="Enter your phone number" required 
+            title="Please enter exactly 10 digits" required />
+        </label>
+        </div>
+        </fieldset>
+      <fieldset class="role-development">
+        <p>¿What role would you be willing to play on a software development?</p>
+        <div class="form-group">
+        <label for="project-manager">
+            <input class="input-radio" id="project-manager" type="radio" name="project-manager" class="inline" checked /> Project Manager</label>
+        </div>
+        <div class="form-group">
+            <label for="ux-designer">
+            <input class="input-radio" id="ux-designer" type="radio" name="ux-designer" class="inline" /> UI/UX Designer</label>
+        </div>
+        <div class="form-group">
+            <label for="ui-developer">
+            <input class="input-radio" id="ui-developer" type="radio" name="ui-developer" class="inline"/> UI Developer</label>
+        </div>
+        <div class="form-group">
+            <label for="frontend">
+            <input class="input-radio" id="frontend" type="radio" name="frontend" class="inline" /> Front-End Developer</label>
+        </div>
+        <div class="form-group">
+            <label for="backend">
+            <input class="input-radio" id="backend" type="radio" name="backend" class="inline" checked /> Back-end Developer</label>
+        </div>
+        <div class="form-group">
+            <label for="dba">
+            <input class="input-radio" id="dba" type="radio" name="dba" class="inline" /> DBA (Database Admin)</label>
+        </div>
+        <div class="form-group">
+            <label for="cloud-architect">
+            <input class="input-radio" id="cloud-architect" type="radio" name="cloud-architect" class="inline"/> Cloud Architect</label>
+        </div>
+        <div class="form-group">
+            <label for="qa-tester">
+            <input class="input-radio" id="qa-tester" type="radio" name="qa-tester" class="inline" /> QA Tester</label>
+        </div>
+        </fieldset>
+      <fieldset class="topics">
+        <div class="form-group">
+        <label class="select" for="dropdown">¿What is your experience level on software development?
+        </div>
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Trainee</option>
+            <option value="2">Junior</option>
+            <option value="3">Semi-Junior</option>
+            <option value="4">Middle</option>
+            <option value="5">Semi-Senior</option>
+            <option value="6">Senior</option>
+            <option value="7">Systems Architect</option>
+          </select>
+        </label> 
+        <div class="form-group">
+        <p>¿Which of the following topics would you like to particpate?</p>
+            <br>
+            <input class="input-checkbox" id="music" type="checkbox" required name="music" /> Music
+            <br>
+            <input class="input-checkbox" id="history" type="checkbox" required name="history" /> History
+            <br>
+            <input class="input-checkbox" id="psychology" type="checkbox" required name="psychology" /> Psychology
+            <br>
+            <input class="input-checkbox"id="philosophy" type="checkbox" required name="philosophy" /> Philosophy
+            <br>
+            <input class="input-checkbox" id="metaphysics" type="checkbox" required name="metaphysics" /> Metaphysics
+            <br>
+            <input class="input-checkbox" id="esoterism" type="checkbox" required name="esoterism" /> Esoterism
+            <br>
+            <input class="input-checkbox" id="astronomy" type="checkbox" required name="astronomy" /> Astronomy
+            <br>
+            <input class="input-checkbox" id="maths" type="checkbox" required name="maths" /> Maths
+            <br>
+            <input class="input-checkbox" id="artificial-intelligent" type="checkbox" required name="artificial-intelligent" /> Artifical Intelligent
+            <br>
+            <input class="input-checkbox" id="technology" type="checkbox" required name="technology" /> Techonology
+            <br>
+            <input class="input-checkbox" id="art-design" type="checkbox" required name="art-design" /> Art & Design
+            <br>
+            <input class="input-checkbox" id="photography" type="checkbox" required name="photography" /> Photograpy
+            <br>
+            <input class="input-checkbox" id="beauty" type="checkbox" required name="beauty" /> Beauty
+          
+        </div> 
+        <div class="form-group">
+           <label for="bio">Tell us about you!
+          <textarea class="input-textarea" id="bio" name="bio" rows="3" cols="30" placeholder="I´m Jennifer and i'm a graphic designer..."></textarea>
+           </label>
+        </div>
+      </fieldset>
+      <div class="form-group"> 
+      <label for="cv">Upload your cv <input id="cv" type="file" name="cv" /></label> <br>
+      </div>
+      <div class="form-group"> 
+      <input class="submit" id="submit" type="submit" value="Submit" />
+       </div>
+      </form>
+    </div>
+  </body>
+</html>
